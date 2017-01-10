@@ -9,10 +9,11 @@ will guide you to the use
 - [yarp::os::RpcServer] (http://www.yarp.it/classyarp_1_1os_1_1RpcServer.html)
 - [yarp::os::RpcClient] (http://www.yarp.it/classyarp_1_1os_1_1RpcClient.html)
 - [yarp::os::Bottle] (http://www.yarp.it/classyarp_1_1os_1_1Bottle.html)
-
+- `yarp rpc` command line to communicate with a YARP rpc port 
 
 # Tutorial
 ...
 
 # [How to complete the assignment](...)
 ...
+
