@@ -18,14 +18,12 @@ int main(int argc, char *argv[]) {
         yInfo()<<"Waiting for a message...";
         Bottle cmd;
         Bottle response;
-        port.read(cmd,true);
 
-        yInfo()<<"Got message:" << cmd.toString();
-        response.addString("you");
-        response.addString("said");
-        response.append(cmd);
-        yInfo()<<"Sending reply:" << response.toString();
-        port.reply(response);
-    }
+        // read from port
+
+        // prepare reply
+
+        // write reply
+     }
 }
 

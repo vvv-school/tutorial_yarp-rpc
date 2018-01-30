@@ -18,19 +18,17 @@ int main(int argc, char *argv[]) {
     port.open("/client");
     int ct = 0;
     while (true) {
+
+        //connect to server
         if (port.getOutputCount()==0) {
             yInfo()<<"Trying to connect to /server";
             yarp.connect("/client", "/server");
         } 
         else {
             Bottle cmd;
-            cmd.addString("COUNT");
-            cmd.addInt(ct);
-            ct++;
-            yInfo()<<"Sending message..."<<cmd.toString();
-            Bottle response;
-            port.write(cmd, response);
-            yInfo()<<"Got response:"<<response.toString();
+            //prepare query
+
+            //write query and receive reply
         }
         Time::delay(1);
     }
