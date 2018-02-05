@@ -17,7 +17,7 @@ will guide you to the use
  - create a build directory 
  - compile and build 
  
- ```
+ ```bash
  $ cd tutorial_yarp-rpc
  $ mkdir build
  $ cd build
@@ -27,7 +27,7 @@ will guide you to the use
 
 # How to run the tutorial 
 - make sure yarp server is running (`yarp where`), if not open a terminal and run it :
-```
+```bash
 $ yarpserver --write 
 ```
 
@@ -35,12 +35,12 @@ $ yarpserver --write
 
 - open another terminal and switch to the build directory and run the `tutorial_yarp-rpc-server`: 
 
-```
+```bash
 $ ./tutorial_yarp-rpc-server
 ```
 
 - open and other terminal and send command to the server using `yarp rpc`: 
-```
+```bash
 $ yarp rpc /server
 >> hello 
 Response: you said hello
@@ -50,7 +50,7 @@ Response: you said hello
 
 # Test the client
 - in the build folder run the client and see the the messages exchanged between server and client :
-```
+```bash
 $ ./tutorial_yarp-rpc-client
 [INFO]Trying to connect to /server 
 yarp: Sending output from /client to /server using tcp
